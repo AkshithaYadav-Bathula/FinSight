@@ -1,0 +1,25 @@
+{
+  "name": "finsight",
+  "version": "1.0.0",
+  "description": "A smart finance helper for budget scenarios, points tracking, and AI insights",
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "test": "concurrently \"npm run test:backend\" \"npm run test:frontend\"",
+    "test:backend": "cd backend && npm test",
+    "test:frontend": "cd frontend && npm test -- --watchAll=false"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  },
+  "keywords": ["finance", "budget", "tracking", "react", "nodejs", "postgresql"],
+  "author": "FinSight Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AkshithaYadav-Bathula/FinSight.git"
+  }
+}
